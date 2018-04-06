@@ -1,0 +1,6 @@
+create table Countries(
+CC_FIPS	varchar2(10),
+CC_ISO varchar2(10),
+TLD varchar2(10),
+COUNTRY_NAME varchar2(50)
+);
