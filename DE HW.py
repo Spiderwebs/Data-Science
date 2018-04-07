@@ -24,7 +24,7 @@ con = cx_Oracle.connect('Spiderwebs/9137@localhost:1521')
 
 cur=con.cursor()
 
-cur.executemany("INSERT INTO COUNTRIES VALUES(:1,:2,:3,:4)",contList)
+cur.executemany("INSERT INTO COUNTRIES VALUES(:1,:2,:3,:4)",contList[1:][:])
 
 con.commit ()
 
